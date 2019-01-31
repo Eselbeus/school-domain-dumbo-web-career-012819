@@ -23,5 +23,11 @@ class School
   end
   
   def sort
+    @roster.each do |year, students|
+      @roster[year] = students.sort
+      
+    end
+    @roster
+  end
   
 end
