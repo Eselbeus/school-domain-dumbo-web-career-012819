@@ -11,16 +11,15 @@ class School
   end
   
   def add_student(student, grade)
-    if @roster[grade]
-      @roster[grade] << student
-      # binding.pry
+    if roster[grade]
+      roster[grade] << student
     else
-      @roster[grade] = [student]
+      roster[grade] = [student]
     end
   end
   
   def grade(grade)
-    roster[grade]
+    @roster[grade]
   end
   
   def sort
